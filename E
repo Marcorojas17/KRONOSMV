@@ -1,0 +1,41 @@
+KRONOSMV/
+├── README.md
+├── LICENSE-CODE
+├── LICENSE-CONTENT
+├── SECURITY.md
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── CHANGELOG.md
+├── .gitignore
+├── .github/workflows/
+│   ├── pages.yml
+│   └── verify.yml
+├── docs/
+│   ├── .nojekyll
+│   ├── index.html
+│   ├── manifiesto.html
+│   ├── style.css
+│   ├── app.js
+│   ├── sitemap.xml
+│   ├── robots.txt
+│   └── ensayos/
+│       ├── es/001-monopolios-ia-101-2.html
+│       └── en/001-ai-monopolies-101-2.html
+├── contenido/
+│   ├── es/001-monopolios/
+│   │   ├── vision-humana.md
+│   │   ├── colaboracion-ia.md
+│   │   ├── proceso.md
+│   │   └── version-final.md
+│   └── en/001-ai-monopolies/
+│       ├── human-vision.md
+│       ├── ai-collaboration.md
+│       ├── process.md
+│       └── final-version.md
+├── crypto/
+│   ├── README.md
+│   ├── generar-hashes.sh
+│   ├── verificar.sh
+│   └── hashes.txt
+└── tests/
+    └── verify.js
