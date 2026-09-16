@@ -1,4 +1,4 @@
-/* KRONOSMV · Terminal interactiva 2099 */
+/* KRONOSMV · Terminal interactiva 2099 · v1.0.0 */
 (function () {
   const term = document.getElementById("term");
   if (!term) return;
@@ -10,10 +10,11 @@
   const SELLO = "MB-2099-M045";
   const AUTOR = "Marco Antonio Rojas Valdovinos";
 
+  // ✅ Rutas correctas relativas a /docs/index.html
   const RUTAS = {
     "001": {
-      es: "../ensayos/es/001-monopolios-ia-101-2.html",
-      en: "../ensayos/en/001-ai-monopolies-101-2.html"
+      es: "./ensayos/es/001-monopolios-ia-101-2.html",
+      en: "./ensayos/en/001-ai-monopolies-101-2.html"
     }
   };
 
@@ -50,9 +51,9 @@
   async function arranque() {
     await tipear("KRONOSMV · Archivo 2099", "sys");
     await tipear("Inicializando terminal ...", "dim");
-    await tipear("Firma: " + SELLO, "dim");
-    await tipear("Autor: " + AUTOR, "dim");
-    await tipear("Versión: v" + VERSION, "dim");
+    await tipear("Firma : " + SELLO, "dim");
+    await tipear("Autor : " + AUTOR, "dim");
+    await tipear("Ver   : v" + VERSION, "dim");
     escribir("");
     await tipear("Escribe 'help' para ver comandos.", "");
     escribir("");
@@ -67,7 +68,7 @@
     escribir("  status            estado del archivo");
     escribir("  manifest          abre el manifiesto");
     escribir("  whoami            identidad local");
-    escribir("  hash              muestra sello SHA-256");
+    escribir("  hash              info de verificación");
     escribir("  clear             limpia la terminal");
   }
 
@@ -101,7 +102,7 @@
     escribir("Sello       : " + SELLO);
     escribir("Autor       : " + AUTOR);
     escribir("Idioma      : " + idioma);
-    escribir("Estado      : público · firmado");
+    escribir("Estado      : público · registrado");
   }
 
   function cmdManifest() {
@@ -122,7 +123,7 @@
   }
 
   function cmdHash() {
-    escribir("Sello SHA-256:", "sys");
+    escribir("Integridad SHA-256:", "sys");
     escribir("  Los hashes oficiales viven en crypto/hashes.txt del repositorio.", "dim");
     escribir("  Verificar con: bash crypto/verificar.sh", "dim");
   }
