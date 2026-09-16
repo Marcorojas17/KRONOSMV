@@ -2,13 +2,13 @@
 
 ## Timeline
 
-1. **Original idea (human).** Observation of invisible AI monopoly.
-2. **Structure (AI).** Division into 5 thematic blocks.
-3. **ES drafting (human + AI).** Human writes thesis; AI expands technical detail.
-4. **EN translation (AI).** Parallel English version.
-5. **Design (AI).** "Archive 2099" system.
-6. **Verification (human).** Final review and signature.
-7. **Sealing (crypto).** SHA-256 of each published file.
+1. **Original idea (human).**
+2. **Structure (AI).**
+3. **ES drafting (human + AI).**
+4. **EN translation (AI).**
+5. **Design (AI).**
+6. **Verification (human).**
+7. **Sealing (crypto).**
 
 ## Tools
 
