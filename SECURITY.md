@@ -1,20 +1,27 @@
 # Política de Seguridad
 
-## Reporte de vulnerabilidades
-
-Si encuentras una vulnerabilidad en este proyecto, reporta de forma privada
-abriendo un issue marcado como **security** o mediante el correo de contacto
-listado en el perfil del autor.
-
-## Uso del contenido
-
-Todo el contenido de este repositorio es obra original de
-**Marco Antonio Rojas Valdovinos**.
-
-No se permite la clonación, redistribución o uso comercial sin autorización
-expresa y por escrito del autor.
-
 ## Alcance
 
-Este proyecto es un repositorio editorial y filosófico. No procesa datos
-personales de terceros ni ejecuta servicios de backend.
+Este repositorio es un archivo editorial estático. No ejecuta backend,
+no procesa datos personales, no almacena credenciales.
+
+## Reporte de vulnerabilidades
+
+Para reportar una vulnerabilidad, abrir un Issue marcado con la etiqueta
+`security` o contactar mediante el perfil del autor en GitHub.
+
+## Integridad criptográfica
+
+Todos los archivos publicados se registran con hash **SHA-256** en
+[`crypto/hashes.txt`](./crypto/hashes.txt). Cualquier alteración posterior
+invalida la verificación.
+
+## Claves privadas
+
+**Nunca** se almacenan claves privadas en este repositorio. Solo hashes y
+firmas públicas.
+
+## Contenido
+
+Todo el contenido es propiedad intelectual de Marco Antonio Rojas Valdovinos.
+No se permite uso comercial ni derivación sin autorización por escrito.
