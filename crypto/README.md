@@ -6,25 +6,35 @@
 ## 2️⃣8️⃣ `crypto/README.md`
 
 ```markdown
-# Crypto — Verificación Criptográfica
+# Crypto — Verificación
 
 ## Algoritmo
 
-**SHA-256** — Secure Hash Algorithm 2, 256 bits.
-Estándar FIPS 180-4. Sin dependencias externas.
+**SHA-256** — Secure Hash Algorithm 2, 256 bits. FIPS 180-4.
+Sin dependencias externas.
 
-## Objetivo
+## Qué hace
 
-Permitir que cualquier persona verifique que los archivos publicados
-no han sido alterados desde su publicación oficial.
+- **`generar-hashes.sh`** → genera hashes SHA-256 de los archivos publicados.
+- **`verificar.sh`** → recalcula y compara con los hashes registrados.
 
-## Cómo funciona
+## Qué prueba
 
-1. Al publicar una versión, se calcula el SHA-256 de cada archivo HTML.
-2. Los hashes se registran en `hashes.txt`.
-3. Cualquier persona puede recalcular los hashes y compararlos.
+SHA-256 prueba **integridad**: que un archivo no cambió desde que se
+calculó su hash. **No prueba autoría.**
 
-## Verificar
+## Autoría
+
+La autoría se establece por:
+
+- Sello editorial `MB-2099-M045`
+- Historial de commits en GitHub
+- Firma GPG opcional de los tags (ver abajo)
+
+## Firmar con GPG (opcional)
+
+Requiere clave GPG configurada localmente.
 
 ```bash
-bash crypto/verificar.sh
+gpg --armor --detach-sign crypto/hashes.txt
+# Genera crypto/hashes.txt.asc (firma pública)
