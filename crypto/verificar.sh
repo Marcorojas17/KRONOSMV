@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # KRONOSMV · Verificar integridad SHA-256
 # Uso: bash crypto/verificar.sh
-# Autor: Marco Antonio Rojas Valdovinos
 
 set -e
 
@@ -36,8 +35,6 @@ while IFS= read -r linea; do
     echo "OK     $ruta"
   else
     echo "ALTERADO $ruta"
-    echo "       esperado: $hash_esperado"
-    echo "       actual:   $hash_actual"
     FALLOS=$((FALLOS + 1))
   fi
 done < "$ARCHIVO"
