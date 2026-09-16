@@ -1,14 +1,14 @@
 # Contribuir
 
-Este repositorio es una obra editorial firmada. **No se aceptan cambios de
-contenido ni de código** sin autorización del autor.
+Este repositorio es una obra editorial firmada. **No se aceptan cambios
+de contenido ni de código** sin autorización del autor.
 
 ## Se aceptan
 
 - Reportes de errores tipográficos.
 - Enlaces roto.
 - Errores de traducción (con fuente verificable).
-- Reportes de seguridad.
+- Reportes de seguridad (ver [`SECURITY.md`](./SECURITY.md)).
 
 ## No se aceptan
 
@@ -18,6 +18,6 @@ contenido ni de código** sin autorización del autor.
 
 ## Traducciones
 
-Se aceptan **propuestas** de traducción a nuevos idiomas mediante Issue,
-etiquetadas `translation`. La traducción final se publica firmada por
-el autor y el traductor.
+Se aceptan **propuestas** de traducción mediante Issue etiquetado
+`translation`. La traducción final se publica firmada por el autor
+y el traductor.
