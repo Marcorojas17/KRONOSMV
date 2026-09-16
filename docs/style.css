@@ -1,10 +1,13 @@
+/* ═══════════════════════════════════════════════════════════════════════ */
+/* KRONOSMV · Archivo 2099 · Tema papel + terminal CRT                    */
+/* ═══════════════════════════════════════════════════════════════════════ */
+
 :root {
   --papel: #f4f1ea;
   --papel-sombra: #d9d4c7;
   --tinta: #1a1a1a;
   --sello: #7a1c1c;
   --linea: #2a2a2a;
-  --crt-fondo: #0a0e0a;
   --crt-verde: #00ff41;
   --crt-verde-apagado: #1a5c2a;
   --oro: #c9a44c;
@@ -73,13 +76,6 @@ h2 {
   margin: 40px 0 16px 0;
 }
 
-h3 {
-  font-family: var(--serif);
-  font-size: 20px;
-  font-weight: normal;
-  margin: 28px 0 12px 0;
-}
-
 .banner {
   background: #0a0d10;
   border: 1px solid var(--linea);
@@ -95,9 +91,10 @@ h3 {
   margin: 0;
   padding: 0 12px;
   white-space: pre;
+  text-shadow: 0 0 6px rgba(0,255,65,0.6);
 }
 @media (max-width: 700px) {
-  .banner pre { font-size: 6px; }
+  .banner pre { font-size: 5px; }
 }
 
 .datos {
@@ -162,6 +159,7 @@ ul.lista li .num {
 }
 .sello strong { font-size: 11px; letter-spacing: 2px; }
 
+/* TERMINAL */
 .terminal-wrap {
   margin-top: 24px;
   border: 1px solid var(--linea);
@@ -212,11 +210,12 @@ ul.lista li .num {
   height: 280px;
   overflow-y: auto;
   line-height: 1.55;
+  text-shadow: 0 0 4px rgba(0,255,65,0.5);
 }
 .terminal-body .line { white-space: pre-wrap; word-break: break-word; }
-.terminal-body .dim { color: var(--crt-verde-apagado); }
-.terminal-body .err { color: #ff5555; }
-.terminal-body .sys { color: var(--oro); }
+.terminal-body .dim { color: var(--crt-verde-apagado); text-shadow: none; }
+.terminal-body .err { color: #ff5555; text-shadow: 0 0 4px rgba(255,85,85,0.5); }
+.terminal-body .sys { color: var(--oro); text-shadow: 0 0 4px rgba(201,164,76,0.5); }
 .terminal-body .cursor::after {
   content: "▊";
   animation: blink 1s steps(1) infinite;
@@ -297,6 +296,21 @@ footer {
   font-style: italic;
   color: #333;
   margin: 20px 0;
+}
+
+blockquote {
+  border-left: 2px solid #999;
+  padding-left: 16px;
+  color: #444;
+  font-style: italic;
+  margin: 18px 0;
+}
+
+code {
+  font-family: var(--mono);
+  background: #eae6dd;
+  padding: 2px 6px;
+  font-size: 12px;
 }
 
 @media (max-width: 700px) {
