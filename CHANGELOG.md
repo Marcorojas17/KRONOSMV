@@ -7,8 +7,8 @@ Versionado basado en [SemVer](https://semver.org/lang/es/).
 
 ### Humano (Marco Antonio Rojas Valdovinos)
 - Idea original y tesis central.
-- Sello MB-2099-M045.
-- Visión editorial y dirección de arte.
+- Sello editorial MB-2099-M045.
+- Visión y dirección de arte.
 
 ### IA (KRONOS-AI)
 - Estructura E2E del repositorio.
@@ -16,7 +16,7 @@ Versionado basado en [SemVer](https://semver.org/lang/es/).
 - Traducción ES → EN.
 - Sistema de diseño "Archivo 2099".
 - Terminal interactiva.
-- Esquema de verificación criptográfica.
+- Esquema de verificación SHA-256.
 
 ### Añadido
 - Web pública en GitHub Pages.
