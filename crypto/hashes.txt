@@ -1,0 +1,12 @@
+# KRONOSMV · Hashes SHA-256
+# Generado: pendiente (ejecutar: bash crypto/firmar.sh)
+# Algoritmo: SHA-256
+#
+# Formato: <hash>  <ruta>
+#
+# Este archivo se regenera automáticamente al publicar una versión.
+# Ejecuta `bash crypto/firmar.sh` después de modificar cualquier archivo
+# de la carpeta docs/.
+#
+# Ejemplo de línea:
+# a4f2c9d1e8b7...  docs/index.html
